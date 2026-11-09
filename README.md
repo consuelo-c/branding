@@ -8,7 +8,7 @@ Este repositorio no sabe nada de los proyectos que lo usan. Cada proyecto copia 
 
 ## Contenido
 
-- [`tokens.json`](tokens.json) — los colores, la familia tipográfica y sus pesos, y los radios, cada uno con su uso
+- [`tokens.json`](tokens.json) — los colores, la familia tipográfica y sus pesos, y los radios y las sombras, cada uno con su uso
 - [`assets/`](assets/) — los archivos del logo
 - Este archivo — las reglas para usarlos
 
@@ -16,6 +16,7 @@ Este repositorio no sabe nada de los proyectos que lo usan. Cada proyecto copia 
 
 - `assets/logo.svg` es el logotipo caligráfico «Banquetes Consuelo C», de 80×22 (3,6:1), totalmente trazado, con `fill=currentColor`. Es muy delgado, así que dale un tamaño mínimo y nunca lo pongas sobre amarillo.
 - `assets/c-logo.svg` es la «C» ornamentada (14×17), con `fill=currentColor`. Representa la marca donde el logotipo no cabe, como en el ícono de una app: C blanca sobre #333, al 58 % de la altura.
+- La caligrafía del logo es la fuente Flaemische Kanzleischrift (`flaemische-kanzleischrift-400-normal`, peso 400, estilo normal). Los SVG ya vienen trazados, así que no necesitas la fuente para usar el logo; sirve solo para rehacerlo o ampliarlo.
 - Los `*-ink.svg` van rellenos de #333 y los `*-white.svg` de blanco, para donde no se puede usar `currentColor`.
 - `assets/source/` guarda los SVG originales de la marca tal como se entregaron (`fill="black"`). Los demás archivos son los mismos trazos con otro color. No los redibujes.
 - El logo nunca compone texto: la caligrafía es solo el logo.
@@ -35,7 +36,7 @@ Este repositorio no sabe nada de los proyectos que lo usan. Cada proyecto copia 
 
 ## Forma
 
-Bordes en vez de sombras: un borde de 1,5px `#E5E5E5` es el contorno por defecto de tarjetas y campos. Las esquinas son redondeadas, desde 6px en controles pequeños hasta 16px en diálogos, con píldoras a 20px; los valores son los radios de `tokens.json`. Superficies planas: sin degradados ni texturas.
+Sombras en vez de bordes: una sombra suave (`0 1px 3px rgba(51, 51, 51, 0.12)`) es el contorno por defecto de las tarjetas, y una más marcada (`0 8px 24px rgba(51, 51, 51, 0.16)`) levanta lo que flota encima, como diálogos y menús. Los campos son la excepción: llevan un borde de 1,5px `#E5E5E5`, que se vuelve `error-fg` cuando el campo no es válido. Las esquinas son redondeadas, desde 6px en controles pequeños hasta 16px en diálogos, con píldoras a 20px; los valores son los radios y las sombras de `tokens.json`. Superficies planas: sin degradados ni texturas.
 
 ## Íconos
 

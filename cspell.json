@@ -4,5 +4,5 @@
   "language": "es,en",
   "import": ["@cspell/dict-es-es/cspell-ext.json"],
   "ignorePaths": ["assets/**", ".claude/**", "node_modules/**", "package-lock.json"],
-  "words": ["claude", "Consuelo", "diagramaciones", "Medellín", "quinceañeros", "redibujes"]
+  "words": ["claude", "Consuelo", "diagramaciones", "Flaemische", "Kanzleischrift", "Medellín", "quinceañeros", "redibujes"]
 }

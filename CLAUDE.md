@@ -11,7 +11,7 @@ A brand change happens here first, then gets copied into each project by hand.
 ## How the pieces relate
 
 - `README.md` holds the rules, in Spanish (Colombian, «tú», no exclamation marks — the same voice it describes). It is the human-facing spec.
-- `tokens.json` holds the values (colors, type family and weights, radii), each with an English `usage` note.
+- `tokens.json` holds the values (colors, type family and weights, radii, shadows), each with an English `usage` note.
 - The README repeats many hex values and radii inline (Color, Mensajes table, Forma). **A change to a value in `tokens.json` must be mirrored in the README, and vice versa.** Grep for the old hex before finishing.
 - Layouts, components, sizes and spacing are deliberately absent: they belong to each consuming project. Don't add them here.
 
