@@ -1,0 +1,8 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "es,en",
+  "import": ["@cspell/dict-es-es/cspell-ext.json"],
+  "ignorePaths": ["assets/**", ".claude/**", "node_modules/**", "package-lock.json"],
+  "words": ["claude", "Consuelo", "diagramaciones", "Medellín", "quinceañeros", "redibujes"]
+}
